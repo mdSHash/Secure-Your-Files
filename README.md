@@ -1,6 +1,7 @@
 # Secure Your Files
 
 This is a Python script that provides a graphical user interface (GUI) for encrypting and decrypting files using the Advanced Encryption Standard (AES) algorithm. The script uses the `Crypto` package to implement AES encryption and decryption.
+in the program files you can found an Secure_Your_files.exe & Secure_Your_Files.py.
 
 ## Features
 
@@ -8,6 +9,7 @@ This is a Python script that provides a graphical user interface (GUI) for encry
 - Supports encryption and decryption of multiple files at once
 - Displays the encryption key used for encryption
 - Provides a user-friendly GUI for easy file selection and encryption/decryption
+- exe file
 
 ## How to Use
 
