@@ -1,26 +1,63 @@
-Secure Your Files
-Secure Your Files is a Python script that allows you to encrypt and decrypt files using AES encryption. It provides a graphical user interface (GUI) built with tkinter for easy file selection and encryption/decryption operations.
+# File Encrypter and Decrypter
 
-Features
-File Encryption: Encrypt a single file or multiple files simultaneously to protect sensitive data.
-File Decryption: Decrypt encrypted files back to their original format for easy access and use.
-Random Encryption Key: Generates a random encryption key for each session, ensuring strong encryption.
-AES Encryption with CBC Mode: Utilizes AES (Advanced Encryption Standard) encryption algorithm with Cipher Block Chaining (CBC) mode for enhanced security.
-PKCS7 Padding: Implements padding with PKCS7 standard to ensure compatibility and proper block alignment.
-User-Friendly GUI: Provides a graphical user interface with an intuitive design, inspired by the Discord theme, making it easy to select files and perform encryption or decryption operations.
-Dependencies
-Python 3.x: Make sure you have Python 3.x installed on your machine.
-Crypto library: Install the library by running pip install pycryptodome in your terminal.
-tkinter library: Usually included in the Python standard library.
-Usage
-Clone or download the repository to your local machine.
-Open a terminal or command prompt and navigate to the project directory.
-Ensure that you have Python 3.x installed.
-Install the necessary dependencies by running pip install pycryptodome.
-Run the script using the command python Secure_Your_Files.py.
-The graphical user interface (GUI) will open, allowing you to select files and perform encryption or decryption operations.
-Use the "Encrypt File" button to select one or more files and encrypt them using AES encryption.
-Use the "Decrypt File" button to select encrypted files and decrypt them back to their original format.
-To view the encryption key used for the session, click on the "Show Key" button.
-License
+This is a Python script that provides a graphical user interface (GUI) for encrypting and decrypting files using the Advanced Encryption Standard (AES) algorithm. The script uses the `Crypto` package to implement AES encryption and decryption.
+
+## Features
+
+- Encrypts and decrypts files using AES encryption
+- Supports encryption and decryption of multiple files at once
+- Displays the encryption key used for encryption
+- Provides a user-friendly GUI for easy file selection and encryption/decryption
+
+## How to Use
+
+### Installation
+
+To use the script, ensure that you have Python 3 installed on your system. You can download Python 3 from the official website.
+
+In addition, you need to install the `Crypto` package. You can do this using pip by running the following command:
+
+```sh
+pip install pycrypto
+```
+
+### Running the Script
+
+To run the script, simply execute the following command in the directory containing the script:
+
+```sh
+python file_encrypter_decrypter.py
+```
+
+The GUI will be displayed, allowing you to select files to encrypt or decrypt.
+
+### Encryption
+
+To encrypt one or more files, click the "Encrypt File" button. A file dialog will appear, allowing you to select one or more files to encrypt. Once you have selected the files, click the "Open" button to begin the encryption process.
+
+The encrypted files will be saved with the extension `.enc` appended to the original filename.
+
+### Decryption
+
+To decrypt one or more files, click the "Decrypt File" button. A file dialog will appear, allowing you to select one or more files to decrypt. Once you have selected the files, click the "Open" button to begin the decryption process.
+
+The decrypted files will be saved with the original filename, without the `.enc` extension.
+
+### Display Key
+
+To display the encryption key, click the "Show Key" button. The key will be displayed in a message box. You can copy the key to a secure location for safekeeping.
+
+## Dependencies
+
+This script requires the following Python packages:
+
+- `Crypto` (for AES encryption and decryption)
+- `tkinter` (for GUI components)
+
+## Limitations
+
+The script currently only supports AES encryption with a key size of 128 bits.
+
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
