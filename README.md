@@ -1,4 +1,4 @@
-# File Encrypter and Decrypter
+# Secure Your Files
 
 This is a Python script that provides a graphical user interface (GUI) for encrypting and decrypting files using the Advanced Encryption Standard (AES) algorithm. The script uses the `Crypto` package to implement AES encryption and decryption.
 
@@ -26,7 +26,7 @@ pip install pycrypto
 To run the script, simply execute the following command in the directory containing the script:
 
 ```sh
-python file_encrypter_decrypter.py
+python Secure_Your_Files.py
 ```
 
 The GUI will be displayed, allowing you to select files to encrypt or decrypt.
